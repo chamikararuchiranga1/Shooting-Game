@@ -1,0 +1,169 @@
+
+body{
+    overflow: hidden;
+}
+
+.mainsection{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    cursor: none;
+}
+
+.mainsection>img:nth-child(1){
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mainsection>img:nth-child(2){
+    position: absolute;
+    width: 30vw;
+    height: 30vh;
+    /*z-index: 5;*/
+    top: 70vh;
+}
+
+.mainsection>img:nth-child(3){
+    position: absolute;
+    width: 4vw;
+    height: 7vh;
+    /*z-index: 8;*/
+}
+.mainsection>img:nth-child(4){
+    position: absolute;
+    width: 0.5vw;
+    height: 3vh;
+    top: 76vh;
+    display: none;
+}
+.mainsection>img:nth-child(5) {
+    position: absolute;
+    width: 0.5vw;
+    height: 3vh;
+    display: none;
+}
+.bird{
+    background-image: url("../assest/img/bird.gif");
+    width: 5vw;
+    height: 8vh;
+    position: absolute;
+    background-size: cover;
+    /*z-index: 11;*/
+}
+.fire{
+    background-image: url("../assest/img/fire.gif");
+    width: 5vw;
+    height: 8vh;
+    position: absolute;
+    background-size: cover;
+    display: none;
+}
+#bird_1{
+    animation: flying_1 15s infinite;
+    transform: rotateY(180deg);
+}
+#bird_2{
+    animation: flying_2 23s infinite;
+    transform: rotateY(180deg);
+}
+#bird_3{
+    animation: flying_3 18s infinite;
+}
+#bird_4{
+    animation: flying_4 25s infinite;
+}
+
+.zombi{
+    width: 6vw;
+    height: 14vh;
+    position: absolute;
+    background-size: cover;
+    /*z-index: 11;*/
+}
+#zombiBos{
+    background-image: url("../assest/img/zombi bos.gif");
+    transform: rotateY(180deg);
+}
+#zombi_1{
+    background-image: url("../assest/img/zombi_1.gif");
+    transform: rotateY(180deg);
+}
+#zombi_2{
+    background-image: url("../assest/img/zombi_2.gif");
+}
+#zombi_3{
+    background-image: url("../assest/img/zombi_3.gif");
+}
+#lblScore{
+    position: absolute;
+    color: white;
+}
+#timer{
+    position: absolute;
+    right: 2vw;
+    color: white;
+}
+#bulletCount{
+    position: absolute;
+    color: white;
+    right: 2vw;
+    bottom: 2vh;
+}
+#bulletDiv{
+    position: absolute;
+    background-image: url("../assest/img/3 Bullet.png");
+    background-size: cover;
+    width: 4vw;
+    height: 9vh;
+    right: 4vw;
+    bottom: 2vh;
+}
+
+
+
+
+/*=========Animation==============*/
+
+@keyframes flying_1 {
+    0%{
+        right: 105%;
+        top: 10%;
+    }
+    100%{
+        right: -5%;
+        top: 25%;
+    }
+}
+
+@keyframes flying_2 {
+    0%{
+        right: 110%;
+        top: 20%;
+    }
+    100%{
+        right: -10%;
+        top: 5%;
+    }
+}
+@keyframes flying_3 {
+    0%{
+        right: -5%;
+        top: 3%;
+    }
+    100%{
+        right: 105%;
+        top: 25%;
+    }
+}
+@keyframes flying_4 {
+    0%{
+        right: -10%;
+        top: 10%;
+    }
+    100%{
+        right: 110%;
+        top: 2%;
+    }
+}

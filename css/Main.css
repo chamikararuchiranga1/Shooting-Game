@@ -1,0 +1,87 @@
+
+body{
+    overflow: hidden;
+}
+.mainView{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+.mainView>img:nth-child(1){
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mainView>img:nth-child(2){
+    position: absolute;
+    width: 4vw;
+    height: 7vh;
+}
+#gameName{
+    position: absolute;
+    margin: 0;
+    font-size: 147px;
+    top: 7vh;
+    left: 25vw;
+    color: #000000;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+}
+#startArrow{
+    background-image: url("../assest/img/arrow.gif");
+    position: absolute;
+    width: 13vw;
+    height: 15vh;
+    top: 41vh;
+    left: 43.5vw;
+    transform: rotate(90deg);
+    background-size: cover;
+}
+#btnstart{
+    position: absolute;
+    background: #971d1d;
+    height: 8vh;
+    width: 12vw;
+    top: 65vh;
+    left: 44vw;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 25px;
+}
+
+.mainDiv{
+    position: absolute;
+    width: 90vw;
+    height: 10vh;
+    background: 0px;
+    display: flex;
+    top: 90vh;
+    left: 5vw;
+    border-radius: 15px;
+    /*display: none;*/
+}
+.child{
+    position: relative;
+    width: 5vw;
+    height: 7vh;
+    background: white;
+    margin: 1.5vh;
+    border-radius: 15px;
+    display: none;
+}
+#txtloading{
+    position: absolute;
+    font-family: "Comic Sans MS";
+    color: #000000;
+    text-align: center;
+    font-size: 50px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    top: 70vh;
+    left: 37vw;
+    display: none;
+}

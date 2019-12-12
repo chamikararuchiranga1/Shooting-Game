@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start</title>
+    <meta name="viewport"content="width=device-width,initial-scale">
+    <link rel="stylesheet" href="libs/normalize.css">
+    <link rel="stylesheet" href="css/Main.css">
+    <link rel="stylesheet" href="css/shoting-1CSS.css">
+    <link rel="stylesheet" href="css/intervalCSS.css">
+    <link rel="icon" href="assest/img/icon.png">
+</head>
+<body>
+<!--start-->
+<section class="mainView">
+    <img src="assest/img/mainCover.jpg">
+    <img src="assest/img/target1.png" id="targett">
+    <h2 id="gameName">Gun Shoot</h2>
+    <div id="startArrow"></div>
+    <Button id="btnstart" onclick="lode(this)">Srat Game</Button>
+    <h1 id="txtloading"></h1>
+    <div class="mainDiv">
+        <div class="child" id="child_1"></div>
+        <div class="child" id="child_2"></div>
+        <div class="child" id="child_3"></div>
+        <div class="child" id="child_4"></div>
+        <div class="child" id="child_5"></div>
+        <div class="child" id="child_6"></div>
+        <div class="child" id="child_7"></div>
+        <div class="child" id="child_8"></div>
+        <div class="child" id="child_9"></div>
+        <div class="child" id="child_10"></div>
+        <div class="child" id="child_11"></div>
+        <div class="child" id="child_12"></div>
+        <div class="child" id="child_13"></div>
+        <div class="child" id="child_14"></div>
+    </div>
+
+
+    <audio src="assest/audio/thunder.wav" id="hartSound"></audio>
+    <audio src="assest/audio/shotgun-mossberg590-RA_The_Sun_God-451502290.wav" id="shotGun"></audio>
+</section>
+<!--game-->
+<section class="mainsection">
+    <img src="assest/img/shooting-1-background.jpg">
+    <img src="assest/img/HAMR_BOII.png" id="gun">
+    <img src="assest/img/target1.png" id="target">
+    <img src="assest/img/bullet.png" id="bullet_1">
+    <img src="assest/img/bullet.png" id="bullet_2">
+
+    <div class="fire" id="bird_1_fire"></div>
+    <div id="bird_1" class="bird"></div>
+    <div id="bird_2" class="bird"></div>
+    <div id="bird_3" class="bird"></div>
+    <div id="bird_4" class="bird"></div>
+
+    <div id="zombiBos" class="zombi"></div>
+    <div id="zombi_1" class="zombi"></div>
+    <div id="zombi_2" class="zombi"></div>
+    <div id="zombi_3" class="zombi"></div>
+
+    <h1 id="lblScore"></h1>
+    <h1 id="timer"></h1>
+    <h1 id="bulletCount"></h1>
+    <div id="bulletDiv"></div>
+
+    <audio src="assest/audio/gun.wav" id="gunsound"></audio>
+    <audio src="assest/audio/background.wav" id="backgroundsound"></audio>
+    <audio src="assest/audio/bird4.wav" id="birdSound"></audio>
+
+</section>
+<!--next-->
+<section class="intervalSection">
+    <img src="assest/img/mainCover.jpg">
+    <div class="mainScoreDiv">
+        <h1>Game Over</h1>
+        <div id="redDiv"></div>
+        <h1 id="time_or_bullet">Time Over</h1>
+        <h1></h1>
+        <h1 id="lbltime">Time  : 00:00</h1>
+        <h1 id="lblbullet">Bullet : 26</h1>
+        <h1 id="lblScorFinish">Score : 37</h1>
+        <h1 id="lblWin">Win</h1>
+        <img src="assest/img/icon.png" id="imgIcon">
+        <Button class="btnretry">Retry</Button>
+        <Button class="btnnext">Next</Button>
+    </div>
+</section>
+
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/intervalSection.js"></script>
+<script src="js/mainPageScript.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/GunScript.js"></script>
+</body>
+</html>

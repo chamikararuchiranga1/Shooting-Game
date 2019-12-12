@@ -1,0 +1,121 @@
+body{
+    overflow: hidden;
+}
+.intervalSection{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    background-size: cover;
+    cursor: cell;
+}
+.intervalSection>img:nth-child(1){
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(0.3);
+}
+.mainScoreDiv{
+    position: relative;
+    background: rgba(253, 253, 255, 0.6);
+    width: 50vw;
+    height: 56vh;
+    border-radius: 20px;
+    left: 25vw;
+    top: 22vh;
+}
+.mainScoreDiv>h1:nth-child(1){
+    position: relative;
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+}
+#redDiv{
+    position: relative;
+    background: red;
+    width: 3vw;
+    height: 2vh;
+    border-radius: 10px;
+    animation: divTranser 2s infinite;
+}
+.mainScoreDiv>h1:nth-child(3){
+    position: relative;
+    text-align: center;
+    color: #2a2d71;
+}
+#lbltime{
+    position: relative;
+    color: #712929;
+    font-size: 25px;
+    left: 2vw;
+}
+#lblbullet{
+    position: relative;
+    color: #712929;
+    font-size: 25px;
+    left: 2vw;
+}
+#lblScorFinish{
+    position: relative;
+    color: #712929;
+    font-size: 25px;
+    left: 2vw;
+}
+#lblWin{
+    position: relative;
+    color: #bf2338;
+    font-size: 67px;
+    left: 18vw;
+    top: -20vh;
+}
+#imgIcon{
+    position: absolute;
+    top: 20vh;
+    left: 33vw;
+}
+.btnretry{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 10vw;
+    font-size: 25px;
+    height: 7vh;
+    top: 22vw;
+    left: 2vw;
+    border: 0;
+    border-radius: 10px;
+    display: none;
+}
+.btnnext{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 10vw;
+    font-size: 25px;
+    height: 7vh;
+    top: 22vw;
+    left: 14vw;
+    border: 0;
+    border-radius: 10px;
+    display: none;
+}
+
+
+
+
+
+/*================Animation==================*/
+
+@keyframes divTranser {
+    0%{
+        left: 2vw
+    }
+    50%{
+        left: 45vw;
+    }
+    100%{
+        left: 2vw;
+    }
+
+
+}
